@@ -16,12 +16,12 @@ header(:class=`{
         nuxt-link(to="/place")
           li {{ firstName($getUser().name) }}'s Places
         nuxt-link(to="/group")
-          li {{ firstName($getUser().name) }}'s Group Trips
+          li {{ firstName($getUser().name) }}'s Group Talks 
       div(@click="menuOpened = !menuOpened")
         icon-base.menu(icon-name="menu" icon-color="white" width="28" height="28")
           icon-three-dot
       app-menu-drawer(:menuOpened="menuOpened")
-      app-nav-transition
+      //- app-nav-transition
       app-stats(v-if="page === 'index'" :selectedUser="$getUser()")
 </template>
 
@@ -85,7 +85,7 @@ function firstName(input) {
 <style scoped lang="scss">
 header {
   width: 100vw;
-  height: 300px;
+  height: 400px;
   position: relative;
   &:before {
     content: "";
@@ -139,7 +139,7 @@ header {
   background-size: cover;
   position: absolute;
   width: 100vw;
-  height: 300px;
+  height: 400px;
 }
 
 .header-img1 {
@@ -168,7 +168,7 @@ header {
 .bk-img {
   position: absolute;
   width: 100vw;
-  height: 300px;
+  height: 400px;
   overflow: hidden;
   top: 0;
 }

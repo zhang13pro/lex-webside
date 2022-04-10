@@ -1,6 +1,6 @@
 <template>
   <div class="stats">
-    <!-- <div class="bio">
+    <div class="bio">
       <p>{{ selectedUser.bio }}</p>
     </div>
     <div>
@@ -12,14 +12,14 @@
       <span class="desc">Following</span><br /><span class="lg">{{
         selectedUser.following
       }}</span>
-    </div> -->
+    </div>
   </div>
 </template>
 
 <script setup>
 defineProps({
   selectedUser: {
-    type: Object,
+    type: object,
   },
 })
 </script>

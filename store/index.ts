@@ -3,6 +3,19 @@ export const state = () => ({
   indexedUser: 0,
   users: [
     {
+      job: "coder",
+      name: "Lex Zhang",
+      img: "/profile1.jpg",
+      location: "Hangzhou",
+      bio: "Coding is easy,coding is what i do",
+      following: 26,
+      followers: 7,
+      photos: 94,
+      days: 132,
+      trips: ["Shanghai", "Xian", "Nanchang", "Fuzhou", "Hangzhou"],
+    },
+    {
+      job: "coder",
       name: "Sophia Gonzalez",
       img: "/profile2.jpg",
       location: "San Francisco",
@@ -14,6 +27,7 @@ export const state = () => ({
       trips: ["Honolulu", "Burmuda", "Los Cabos", "San Antonio"],
     },
     {
+      job: "coder",
       name: "Ben Allen",
       img: "/profile3.jpg",
       location: "Boston",
@@ -25,6 +39,7 @@ export const state = () => ({
       trips: ["Honolulu", "Peru", "San Francisco"],
     },
     {
+      job: "coder",
       name: "Jill Fernandez",
       img: "/profile4.jpg",
       location: "Seattle",
@@ -36,6 +51,7 @@ export const state = () => ({
       trips: ["Honolulu", "Tokyo", "Osaka"],
     },
     {
+      job: "coder",
       name: "Cynthia Obel",
       img: "/profile5.jpg",
       location: "Kentucky",

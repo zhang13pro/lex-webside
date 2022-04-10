@@ -8,7 +8,7 @@ transition(mode="out-in" name="menu")
       | Lex's Places
     br
     nuxt-link(to="/group")
-      | Lex's Group Trips
+      | Lex's Group Talks
 </template>
 <script setup lang="ts">
 withDefaults(

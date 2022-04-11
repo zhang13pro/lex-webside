@@ -1,5 +1,5 @@
 import { defineNuxtPlugin } from "#app"
-import { getters, mutations, state } from "../store"
+import { getters, mutations, state } from "../stores"
 
 export default defineNuxtPlugin(() => ({
   provide: {

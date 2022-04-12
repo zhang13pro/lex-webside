@@ -4,9 +4,16 @@ p Do
 div Something Cool
 nuxt-link(to="/home") toHome  
 button +
-| {{num}}
+| {{counter}}
 button -
 </template>
 <script setup lang="ts">
-let num = ref(1)
+import { useCounterStore } from "../stores/counter"
+// TODO How does count is?
+const counter = useCounterStore()
+counter.count++
+// with autocompletion ✨
+counter.$patch({ count: counter.count + 1 })
+// or using an action instead
+counter.increment()
 </script>

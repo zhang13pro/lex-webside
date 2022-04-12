@@ -14,10 +14,10 @@
     "sass-loader": "^9.0.3"
   },
   "dependencies": {
+    "pinia": "^2.0.13",
     "@pinia/nuxt": "^0.1.8",
     "@vueuse/core": "^8.2.5",
     "@vueuse/nuxt": "^8.2.5",
-    "gsap": "^3.10.2",
-    "pinia": "^2.0.13"
+    "gsap": "^3.10.2"
   }
 }

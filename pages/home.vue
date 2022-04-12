@@ -6,13 +6,12 @@ div There is Home page don't need nuxt-page
 button(@click="log") Dark
 </template>
 <script setup language="ts">
-import { useMouse, useDark, useToggle } from "@vueuse/core"
-
 const num = ref(1)
 const { $hello } = useNuxtApp()
 const isDark = useDark()
 // TODO useDark
 const toggleDark = useToggle(isDark)
+const { x, y } = useMouse()
 
 function log() {
   console.log(121)

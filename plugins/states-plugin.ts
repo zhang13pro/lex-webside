@@ -6,7 +6,7 @@ export default defineNuxtPlugin(() => ({
     getUser: () => getters.selectedUser(state),
     changePage: () => mutations.updatePage,
     changeUser: () => mutations.changeUser,
-
+    /** test Plugin */ 
     hello: () => "world",
   },
 }))

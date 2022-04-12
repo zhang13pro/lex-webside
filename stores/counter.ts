@@ -1,5 +1,6 @@
 import { defineStore } from "pinia"
 
+/** test pinia in Nuxt3 */
 export const useCounterStore = defineStore("counter", () => {
   const count = ref(0)
   function increment() {

@@ -12,11 +12,11 @@ header(:class=`{
     nav
       ul
         nuxt-link(exact to="/")
-          li {{ firstName($getUser().name) }}'s Home
+          li {{ firstName('Len Allen') }}'s Home
         nuxt-link(to="/place")
-          li {{ firstName($getUser().name) }}'s Places
+          li {{ firstName('Len Allen') }}'s Places
         nuxt-link(to="/group")
-          li {{ firstName($getUser().name) }}'s Group Talks 
+          li {{ firstName('Len Allen') }}'s Group Talks 
       div(@click="menuOpened = !menuOpened")
         icon-base.menu(icon-name="menu" icon-color="white" width="28" height="28")
           icon-three-dot
@@ -27,7 +27,6 @@ header(:class=`{
 
 <script setup lang="ts">
 import { TimelineMax, TweenMax, Expo, Sine, Back } from "gsap"
-import { state } from "../store"
 
 const { $getUser, $changePage } = useNuxtApp()
 const menuOpened = ref(false)
@@ -61,7 +60,7 @@ function closeMenu() {
   })
 }
 
-function firstName(input) {
+function firstName(input: string) {
   const lastIndex = input.lastIndexOf(" ")
   return input.substring(0, lastIndex)
 }
@@ -85,7 +84,7 @@ function firstName(input) {
 <style scoped lang="scss">
 header {
   width: 100vw;
-  height: 400px;
+  min-height: 400px;
   position: relative;
   &:before {
     content: "";
@@ -139,7 +138,7 @@ header {
   background-size: cover;
   position: absolute;
   width: 100vw;
-  height: 400px;
+  min-height: 400px;
 }
 
 .header-img1 {
@@ -168,7 +167,7 @@ header {
 .bk-img {
   position: absolute;
   width: 100vw;
-  height: 400px;
+  min-height: 400px;
   overflow: hidden;
   top: 0;
 }

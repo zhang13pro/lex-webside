@@ -1,16 +1,12 @@
 <template lang="pug">
 h1 Kobe Bryant
 p Do
-span Something Cool
-nuxt-link(to="/home")
-  | toHome
-next-page
+div Something Cool
+nuxt-link(to="/home") toHome  
 button +
-| {{ counter }}
+| {{num}}
 button -
 </template>
 <script setup lang="ts">
-import { useCounterStore } from "~~/stores/counter"
-
-const { counter } = useCounterStore()
+let num = ref(1)
 </script>

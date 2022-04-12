@@ -25,7 +25,7 @@
 </template>
 
 <script setup lang="ts">
-import { state } from "../store"
+import { state } from "../stores"
 const { $getUser } = useNuxtApp()
 const users = state().users
 const places = state().places

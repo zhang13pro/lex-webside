@@ -15,7 +15,7 @@ footer {
   letter-spacing: 0.03em;
   margin-top: 30px;
   width: 100%;
-  height: 50px;
+  min-height: 50px;
 }
 
 a,

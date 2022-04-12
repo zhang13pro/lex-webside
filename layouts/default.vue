@@ -1,7 +1,8 @@
 <template lang="pug">
-div
+.container
   app-navigation
-  slot
+  .slot
+    slot
   app-footer
 </template>
 
@@ -18,6 +19,16 @@ body {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   line-height: 1.2;
+}
+
+/* sticky footer */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.slot {
+  flex: 1;
 }
 
 *,

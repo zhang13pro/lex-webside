@@ -84,7 +84,7 @@ function firstName(input: string) {
 <style scoped lang="scss">
 header {
   width: 100vw;
-  min-height: 400px;
+  min-height: 300px;
   position: relative;
   &:before {
     content: "";
@@ -138,7 +138,7 @@ header {
   background-size: cover;
   position: absolute;
   width: 100vw;
-  min-height: 400px;
+  min-height: 300px;
 }
 
 .header-img1 {
@@ -167,7 +167,7 @@ header {
 .bk-img {
   position: absolute;
   width: 100vw;
-  min-height: 400px;
+  min-height: 300px;
   overflow: hidden;
   top: 0;
 }

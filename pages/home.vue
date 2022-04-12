@@ -1,19 +1,21 @@
 <template lang="pug">
 div There is Home page don't need nuxt-page
-| {{num}}
-| hello {{$hello()}}
-| {{x}} + {{y}}
-button(@click="log") Dark
+div hello {{ $hello() }}
+button Dark
+p {{ Math.round(output) }}+
 </template>
 <script setup language="ts">
-const num = ref(1)
+import { TransitionPresets } from "@vueuse/core"
+
 const { $hello } = useNuxtApp()
 const isDark = useDark()
-// TODO useDark
 const toggleDark = useToggle(isDark)
-const { x, y } = useMouse()
 
-function log() {
-  console.log(121)
-}
+/**number add animation */
+const count = ref(0)
+const output = useTransition(count, {
+  duration: 5000,
+  transition: TransitionPresets.easeOutExpo,
+})
+count.value = 1024
 </script>
